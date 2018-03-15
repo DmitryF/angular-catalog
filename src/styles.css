@@ -18,8 +18,8 @@ body{
 .app-header {
   grid-column: 1 / 13;
   width: 100%;
-  height: auto;
   grid-row: 1;
+  height: auto;
   position: fixed;
 }
 
