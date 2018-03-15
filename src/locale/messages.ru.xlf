@@ -62,10 +62,10 @@
 
         <!-- LOGIN CARD -->
         <trans-unit id="loginCardTitle" datatype="html">       
-        <target>Login</target>
+        <target>Вход в учётную запись</target>
         </trans-unit>
         <trans-unit id="loginCardDescription" datatype="html">        
-        <target>Fill the form</target>
+        <target>Заполните форму</target>
         </trans-unit>
         <!-- /LOGIN CARD -->
 
