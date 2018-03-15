@@ -60,7 +60,14 @@
         </trans-unit>
         <!-- /REGISTER CARD -->
 
-
+        <!-- LOGIN CARD -->
+        <trans-unit id="loginCardTitle" datatype="html">       
+        <target>Login</target>
+        </trans-unit>
+        <trans-unit id="loginCardDescription" datatype="html">        
+        <target>Fill the form</target>
+        </trans-unit>
+        <!-- /LOGIN CARD -->
 
         <!-- AUTHORIZATION -->
         <trans-unit id="signUp" datatype="html">
