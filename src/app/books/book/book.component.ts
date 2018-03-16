@@ -16,7 +16,7 @@ export class BookComponent implements OnInit {
 
   @Input('book') book: Book;
 
-  coverImage: SafeStyle = '../assets/unicorn_coloring_book.jpg';//'https://material.angular.io/assets/img/examples/shiba2.jpg';
+  coverImage: SafeStyle = './assets/unicorn_coloring_book.jpg';//'https://material.angular.io/assets/img/examples/shiba2.jpg';
 
   constructor(private sanitizer: DomSanitizer) {
     this.coverImage = this.sanitizer.bypassSecurityTrustStyle(`url(${this.coverImage})`);

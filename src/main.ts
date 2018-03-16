@@ -7,14 +7,15 @@ import { platformBrowserDynamic } from '@angular/platform-browser-dynamic';
 
 import { AppModule } from './app/app.module';
 import { environment } from './environments/environment';
-import {TranslateService} from './app/services';
+import {TranslateService} from './app/services/translate.service';
 
 if (environment.production) {
   enableProdMode();
 }
 
 declare const require;
-const translations = require('raw-loader!./locale/messages.' + TranslateService.getLocale() + '.xlf');
+let translateService = TranslateService;
+const translations = require('raw-loader!./locale/messages.' + translateService.getLocale() + '.xlf');
 
 platformBrowserDynamic().bootstrapModule(AppModule, {
 	missingTranslation: MissingTranslationStrategy.Error,
